@@ -1,0 +1,4 @@
+rootProject.name = 'auto-optimal-mortgage'
+
+include 'main-application'
+include 'routes'
