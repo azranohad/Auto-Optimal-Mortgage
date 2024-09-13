@@ -32,10 +32,19 @@ public abstract class BaseRouteService implements RouteService {
                 .build()));
     }
 
+    /*
+        * Delete all routes of the current type
+     */
+    @Override
+    public void deleteAllByRouteType() {
+        routesRepository.deleteByRouteType(getRouteType());
+    }
+
+    /*
+        * Clear all routes
+     */
     @Override
     public void deleteAll() {
         routesRepository.deleteAll();
     }
-
-
 }

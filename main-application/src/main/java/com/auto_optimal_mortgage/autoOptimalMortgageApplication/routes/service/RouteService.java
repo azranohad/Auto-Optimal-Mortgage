@@ -1,10 +1,7 @@
 package com.auto_optimal_mortgage.autoOptimalMortgageApplication.routes.service;
 
-import com.auto_optimal_mortgage.autoOptimalMortgageApplication.routes.entity.PaymentEntity;
 import com.auto_optimal_mortgage.autoOptimalMortgageApplication.routes.enums.RouteType;
 import com.auto_optimal_mortgage.autoOptimalMortgageApplication.routes.service.model.Route;
-
-import java.util.List;
 
 public interface RouteService {
 
@@ -13,6 +10,8 @@ public interface RouteService {
     Route saveRoute(Route route);
 
     RouteType getRouteType();
+
+    void deleteAllByRouteType();
 
     void deleteAll();
 

@@ -30,7 +30,7 @@ public class RouteController {
 
     @DeleteMapping("")
     public ResponseEntity<Void> deleteAll() {
-        routeServiceProvider.getRouteService(RouteType.FIXED_RATE).deleteAll();
+        routeServiceProvider.getRouteService(RouteType.FIXED_RATE).deleteAllByRouteType();
         return ResponseEntity.noContent().build();
     }
 

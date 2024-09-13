@@ -5,7 +5,6 @@ import com.auto_optimal_mortgage.autoOptimalMortgageApplication.routes.service.R
 import com.auto_optimal_mortgage.autoOptimalMortgageApplication.routes.service.RouteServiceProvider;
 import jakarta.annotation.PostConstruct;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.ApplicationContext;
 import org.springframework.stereotype.Component;
 
 import java.util.*;
